@@ -1,5 +1,3 @@
-markdown
-
 # Lista de Produtos SMD
 
 O **Lista de Produtos** é um projeto simples de CRUD (Create, Read, Update, Delete) desenvolvido em Django. Ele permite adicionar, visualizar, editar e excluir produtos, fornecendo os campos de nome, preço e descrição. O projeto utiliza Django 4, Bootstrap 4 e Postgres como banco de dados.
@@ -24,35 +22,17 @@ Siga as instruções abaixo para configurar o ambiente e executar o projeto Djan
 
 1. Abra o prompt de comando ou PowerShell.
 2. Navegue até o diretório raiz do projeto.
-3. Crie um ambiente virtual (recomendado) executando o seguinte comando:
-
-python -m venv myenv
-
-arduino
-
-4. Ative o ambiente virtual com o comando:
-
-myenv\Scripts\activate
-
-csharp
-
-5. Instale as dependências do projeto executando o seguinte comando:
+3. Instale as dependências do projeto executando o seguinte comando:
 
 pip install -r requirements.txt
 
-csharp
-
-6. Execute as migrações do banco de dados para criar as tabelas necessárias:
+4. Execute as migrações do banco de dados para criar as tabelas necessárias:
 
 python manage.py migrate
 
-markdown
-
-7. Inicie o servidor de desenvolvimento executando o seguinte comando:
+5. Inicie o servidor de desenvolvimento executando o seguinte comando:
 
 python manage.py runserver
-
-markdown
 
 8. O projeto estará disponível em http://127.0.0.1:8000/.
 
@@ -60,37 +40,19 @@ markdown
 
 1. Abra o Terminal.
 2. Navegue até o diretório raiz do projeto django-crud-example.
-3. Crie um ambiente virtual (recomendado) executando o seguinte comando:
-
-python3 -m venv myenv
-
-arduino
-
-4. Ative o ambiente virtual com o comando:
-
-source myenv/bin/activate
-
-csharp
-
-5. Instale as dependências do projeto executando o seguinte comando:
+3. Instale as dependências do projeto executando o seguinte comando:
 
 pip install -r requirements.txt
 
-csharp
-
-6. Execute as migrações do banco de dados para criar as tabelas necessárias:
+4. Execute as migrações do banco de dados para criar as tabelas necessárias:
 
 python manage.py migrate
 
-markdown
-
-7. Inicie o servidor de desenvolvimento executando o seguinte comando:
+5. Inicie o servidor de desenvolvimento executando o seguinte comando:
 
 python manage.py runserver
 
-kotlin
-
-8. O projeto estará disponível em http://127.0.0.1:8000/.
+6. O projeto estará disponível em http://127.0.0.1:8000/.
 
 ## Uso
 
@@ -104,9 +66,6 @@ Após iniciar o servidor de desenvolvimento, você poderá acessar as seguintes 
 Além disso, você pode acessar a interface de administração do Django para gerenciar os produtos em http://127.0.0.1:8000/admin. Para acessar a interface de administração, é necessário criar um superusuário executando o seguinte comando:
 
 python manage.py createsuperuser
-
-csharp
-
 
 Siga as instruções para fornecer um nome de usuário, endereço de e-mail e senha.
 
