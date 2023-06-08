@@ -1,11 +1,10 @@
-# Documentação do Projeto Django CRUD Example
+Lista de Produtos SMD
 
-O Django CRUD Example é um projeto simples de CRUD (Create, Read, Update, Delete) desenvolvido em Django. Ele permite adicionar, visualizar, editar e excluir produtos, fornecendo os campos de nome, preço e descrição. O projeto utiliza Django 4, Bootstrap 4 e Postgres como banco de dados.
+O Lista de Produtos é um projeto simples de CRUD (Create, Read, Update, Delete) desenvolvido em Django. Ele permite adicionar, visualizar, editar e excluir produtos, fornecendo os campos de nome, preço e descrição. O projeto utiliza Django 4, Bootstrap 4 e Postgres como banco de dados.
 Requisitos do Sistema
+Integrantes:
 
-## Integrantes:
-
-* Leonardo Ravanelli
+    Leonardo Ravanelli
 
 Certifique-se de ter os seguintes requisitos instalados no seu sistema antes de prosseguir com a instalação do Django CRUD Example:
 
@@ -13,69 +12,82 @@ Certifique-se de ter os seguintes requisitos instalados no seu sistema antes de 
     Django 4
     PostgreSQL (ou outro banco de dados compatível com Django)
 
-## Instalação
+Instalação
 
 Siga as instruções abaixo para configurar o ambiente e executar o projeto Django CRUD Example em diferentes sistemas operacionais: Windows, macOS e Linux.
-
-## Windows
+Windows
 
     Abra o prompt de comando ou PowerShell.
-
-    Navegue até o diretório raiz do projeto django-crud-example.
-
+    Navegue até o diretório raiz do projeto.
     Crie um ambiente virtual (recomendado) executando o seguinte comando:
+
+shell
 
 python -m venv myenv
 
-Ative o ambiente virtual executando o seguinte comando:
+    Ative o ambiente virtual com o comando:
+
+shell
 
 myenv\Scripts\activate
 
-Instale as dependências do projeto executando o seguinte comando:
+    Instale as dependências do projeto executando o seguinte comando:
+
+shell
 
 pip install -r requirements.txt
 
-Execute as migrações do banco de dados para criar as tabelas necessárias:
+    Execute as migrações do banco de dados para criar as tabelas necessárias:
+
+shell
 
 python manage.py migrate
 
-Inicie o servidor de desenvolvimento executando o seguinte comando:
+    Inicie o servidor de desenvolvimento executando o seguinte comando:
 
-    python manage.py runserver
+shell
+
+python manage.py runserver
 
     O projeto estará disponível em http://127.0.0.1:8000/.
 
-## macOS e Linux
+macOS e Linux
 
     Abra o Terminal.
-
     Navegue até o diretório raiz do projeto django-crud-example.
-
     Crie um ambiente virtual (recomendado) executando o seguinte comando:
+
+shell
 
 python3 -m venv myenv
 
-Ative o ambiente virtual executando o seguinte comando:
+    Ative o ambiente virtual com o comando:
 
-bash
+shell
 
 source myenv/bin/activate
 
-Instale as dependências do projeto executando o seguinte comando:
+    Instale as dependências do projeto executando o seguinte comando:
+
+shell
 
 pip install -r requirements.txt
 
-Execute as migrações do banco de dados para criar as tabelas necessárias:
+    Execute as migrações do banco de dados para criar as tabelas necessárias:
+
+shell
 
 python manage.py migrate
 
-Inicie o servidor de desenvolvimento executando o seguinte comando:
+    Inicie o servidor de desenvolvimento executando o seguinte comando:
 
-    python manage.py runserver
+shell
+
+python manage.py runserver
 
     O projeto estará disponível em http://127.0.0.1:8000/.
 
-## Uso
+Uso
 
 Após iniciar o servidor de desenvolvimento, você poderá acessar as seguintes URLs:
 
@@ -85,6 +97,8 @@ Após iniciar o servidor de desenvolvimento, você poderá acessar as seguintes 
     Excluir produto existente: http://127.0.0.1:8000/delete/<product_id>
 
 Além disso, você pode acessar a interface de administração do Django para gerenciar os produtos em http://127.0.0.1:8000/admin. Para acessar a interface de administração, é necessário criar um superusuário executando o seguinte comando:
+
+shell
 
 python manage.py createsuperuser
 
