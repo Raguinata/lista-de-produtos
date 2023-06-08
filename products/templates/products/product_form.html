@@ -1,0 +1,30 @@
+{% extends 'products/base.html' %}
+
+{% block content %}
+    <h1 class="my-4">{% if request.path == '/new' %} Novo Produto {% else %} Editar - {% endif %}
+        {% if request.path != '/new' %}<small>{{ product.name }}</small>{% endif %}
+    </h1>
+    <div class="row">
+        <div class="col-12">
+            <form method="post">
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="form-group">
+                        {% if field.label == 'Name' %}
+                            <label for="{{ field.id_for_label }}">Nome:</label>
+                        {% elif field.label == 'Description' %}
+                            <label for="{{ field.id_for_label }}">Descrição:</label>
+                        {% elif field.label == 'Price' %}
+                            <label for="{{ field.id_for_label }}">Preço:</label>
+                        {% else %}
+                            {{ field.label_tag }}
+                        {% endif %}
+                        {{ field }}
+                    </div>
+                {% endfor %}
+                <input type="submit" {% if request.path == '/new' %} value="Adicionar" {% else %} value="Atualizar" {% endif %} class="btn btn-success"/>
+                <a href="{% url 'product_list' %}"><button type="button" class="btn btn-secondary">Voltar</button></a>
+            </form>
+        </div>
+    </div>
+{% endblock %}
